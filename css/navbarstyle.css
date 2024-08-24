@@ -1,0 +1,54 @@
+nav {
+    background-color: #ffffff;
+    height: 70px;
+    border: 2px solid black;
+    /* border-radius: 30px; */
+    backdrop-filter: blur(30px);
+}
+
+.Topnav {
+    color: rgb(0, 0, 0);
+    float: right;
+    padding-top: 21px;
+    padding-right: 10px;
+}
+
+.Topnav a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding-left: 3px;
+    padding-right: 13px;
+    font-size: 20px;
+}
+
+.Icon {
+    display: none;
+}
+
+.Topnav a:hover {
+    color: aquamarine;
+}
+
+.Dropdown {
+    float: left;
+    overflow: hidden;
+}
+
+.Topnav .Dropdown i {
+    font-size: 0px;
+}
+
+@media screen and (max-width: 600px) {
+    .Topnav .Dropdown {
+        font-size: 0px;
+    }
+    .Topnav .Dropdown i {
+        font-size: 30px;
+    }
+    .Topnav .Dropdown a {
+        font-size: 0px;
+    }
+    .Topnav .Dropdown button {
+        display: none;
+    }
+}

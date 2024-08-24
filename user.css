@@ -1,0 +1,365 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+}
+
+@font-face {
+    font-family: FC-Subject-Rounded-Regular;
+    src: url('../font/FC-Subject-Rounded-Regular.otf');
+}
+
+
+/* 
+* {
+    margin: 0;
+    padding: 0;
+} */
+
+.labelinfo h1 {
+    color: black;
+}
+
+.frame {
+    border: 1px solid rgba(0, 0, 0, 0.473);
+    background: transparent;
+    backdrop-filter: blur(40px);
+    border-radius: 10px;
+    padding: 20px 60px;
+    width: 300px;
+    height: auto;
+}
+
+.frame h1 {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.frame label {
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 18px;
+}
+
+.frame .input-box {
+    position: relative;
+    background: black;
+    width: 100%;
+    height: 50px;
+    background: transparent;
+    margin-top: 10px;
+    color: white;
+}
+
+.input-box input {
+    width: 99.935%;
+    height: 70%;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background: transparent;
+    /* text-align: center; */
+    border-radius: 40px;
+    color: #eee;
+    padding-left: 20px;
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.664);
+}
+
+.radio-box input {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 2px;
+    padding-top: 10px;
+}
+
+.buttonsubmit {
+    width: 40%;
+    height: 50px;
+    outline: none;
+    border: 1px rgba(0, 0, 0, 0.473);
+    position: absolute;
+    left: 30%;
+    background-color: rgb(255, 178, 78);
+    color: white;
+    border-radius: 30px;
+    align-content: center;
+}
+
+.button-rt {
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+.button-rt .button-return {
+    color: rgb(255, 0, 0);
+    text-decoration: underline;
+    font-size: 16px;
+}
+
+@media screen and (max-width:800px) {
+    .addbook {
+        border: 1px solid rgba(0, 0, 0, 0.473);
+        background: transparent;
+        backdrop-filter: blur(50px);
+        border-radius: 10px;
+        padding: 20px 60px;
+        width: 650px;
+        height: auto;
+        margin-top: 20px;
+    }
+    .addbook h1 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 22px;
+        /* width: 150px; */
+    }
+    .Table .RowTable {
+        text-align: center;
+        align-items: center;
+    }
+    hr.solid {
+        border-top: 3px solid #000000;
+    }
+    .Table .RowTable .Row-Table {
+        padding-left: 10px;
+        color: white;
+    }
+    .TablePrint tr {
+        padding-left: 60px;
+    }
+    .TablePrint {
+        color: rgb(255, 255, 255);
+        margin-left: 60px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .frame {
+        background: transparent;
+        backdrop-filter: blur(30px);
+        border: 0px;
+        justify-content: center;
+        align-items: center;
+        padding-left: 450px;
+        padding-right: 150px;
+        padding-top: 30px;
+        min-height: 50px;
+        width: 40000px;
+        height: 900px;
+        border-radius: 0px;
+        margin-left: 300px;
+        margin-right: 600px;
+    }
+    .frame h1 {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    .frame label {
+        color: rgb(255, 255, 255);
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    .frame .input-box {
+        position: relative;
+        background: black;
+        width: 100%;
+        height: 50px;
+        background: transparent;
+        margin-top: 10px;
+        color: white;
+    }
+    .input-box input {
+        width: 99.935%;
+        height: 70%;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        background: transparent;
+        /* text-align: center; */
+        border-radius: 40px;
+        color: #eee;
+        padding-left: 20px;
+    }
+    .input-box input::placeholder {
+        color: rgba(255, 255, 255, 0.664);
+    }
+    .radio-box input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 2px;
+        padding-top: 10px;
+    }
+    .buttonsubmit {
+        width: 40%;
+        height: 50px;
+        outline: none;
+        border: 1px rgba(0, 0, 0, 0.473);
+        position: absolute;
+        left: 47.5%;
+        background-color: rgb(255, 178, 78);
+        color: white;
+        border-radius: 30px;
+        align-content: center;
+    }
+}
+
+
+/* 
+@media screen and (max-width: 1310px) {
+    .frame {
+        border: 0px solid rgba(0, 0, 0, 0.473);
+        background:transparent;
+        backdrop-filter: blur(30px);
+        border-radius: 10px;
+        width: 900px;
+
+    }
+    
+    .frame h1 {
+        color: rgb(34, 170, 79);
+        text-align: center;
+        font-size: 36px;
+        margin-bottom:30px ;
+        
+    }   
+    
+    .frame label {
+        color:  rgb(255, 255, 255);
+        text-align: center;
+        padding-bottom: 10px;
+        font-size: 18px;
+    }
+    
+    .frame .input-box {
+        position: relative;
+        background:black ;
+        width: 100%;
+        height: 50px;
+        background: transparent;
+        margin-top: 10px;
+        color: white;
+        
+    }
+    
+    .input-box input {
+        width: 99.935%;
+        height: 70%;
+        border: 2px solid rgba(255, 255, 255, 0.2) ;
+        background: transparent;
+        border-radius: 40px;
+        color: #eee;
+        padding-left: 20px;
+    }
+    
+    .input-box input::placeholder {
+        color: rgba(255, 255, 255, 0.664);
+    }
+    
+    .radio-box input {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 20px;
+        width: 20px;
+        background-color: #eee;
+        border-radius: 50%;
+        text-align: center;
+        margin-right: 2px;
+        padding-top: 10px;
+        
+    }
+    
+    .buttonsubmit  {
+        width: 40%;
+        height: 50px;
+        
+        outline: none;
+        border: 1px rgba(0, 0, 0, 0.473);
+    
+        position: absolute;
+        left: 30%;
+    
+        background-color: rgb(255, 178, 78);
+        color: white;
+    
+        border-radius: 30px;
+    
+    
+        align-content: center;
+    
+    
+    }
+    
+
+
+
+
+} */
+
+.container {
+    margin-top: 50px;
+    display: flex;
+    width: 100%;
+    height: auto;
+    background-color: #fbe7d3;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.image {
+    background: url('asset/main.png') no-repeat center center/cover;
+    height: 250px;
+    width: 325px;
+    margin-left: 150px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.content {
+    flex: 2;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+
+.content div {
+    text-align: center;
+}
+
+.content img {
+    max-width: 50px;
+    margin-bottom: 10px;
+}
+
+.content h2 {
+    margin: 0;
+    font-size: 18px;
+    color: #333;
+}
+
+.content p {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    color: #555;
+}
